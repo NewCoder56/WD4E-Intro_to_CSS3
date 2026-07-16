@@ -1,4 +1,83 @@
-body{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 150%;
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f8f4;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #2e8b57;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #1f5f3f;
+    display: block;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Header Image */
+header img {
+    display: block;
+    width: 220px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Main Content */
+main {
+    width: 85%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Paragraphs */
+p {
+    text-align: justify;
+}
+
+/* Gallery Images */
+main div img {
+    display: inline-block;
+    width: 180px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: white;
+    padding: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #ffff99;
 }
