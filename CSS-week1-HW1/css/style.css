@@ -7,6 +7,20 @@ body {
     margin: 0;
 }
 
+/* Skip to Main Content Link */
+.skip {
+    position: absolute;
+    left: -9999px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+
+.skip:focus {
+    left: 10px;
+    top: 10px;
+}
+
 /* Header */
 header {
     background-color: #2e8b57;
@@ -18,7 +32,8 @@ header {
 /* Navigation */
 nav {
     background-color: #1f5f3f;
-    display: block;
+    display: inline-block;
+    width: 80%;
     padding: 10px 0;
 }
 
@@ -29,15 +44,27 @@ nav ul {
     margin: 0;
 }
 
+/* Homework 1 styling commented out */
+/*
 nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
+*/
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Descendent Selector */
+nav img {
+    width: 10%;
 }
 
 /* Header Image */
@@ -52,22 +79,32 @@ header img {
 main {
     width: 85%;
     margin: 20px auto;
-    text-align: center;
 }
 
-/* Paragraphs */
+/* Paragraph */
 p {
     text-align: justify;
 }
 
-/* Gallery Images */
-main div img {
-    display: inline-block;
-    width: 180px;
-    margin: 10px;
-    border-radius: 8px;
-    background-color: white;
-    padding: 5px;
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* Images inside Grid only */
+.grid img {
+    width: 100%;
+}
+
+/* Flex Layout */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /* Footer */
